@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
-    background-image: url('graphics/bk1.gif');
+    background-image: url('graphics/bk1.png');
     background-position:  bottom 10%;
     background-attachment: fixed;
     background-size: cover;
@@ -14,6 +14,7 @@
     cursor: res;
 }
 
+@media (min-width: 500px){
 .contact {
     background-color: black;
     border-radius: 20px;
@@ -56,6 +57,16 @@
      top: 630px;
      left: 400px;
      transform: rotate(-0.04turn)
+ }
+
+ .title 
+ {
+position: absolute;
+top: 300px;
+left: 900px;
+transform: scale(190%) rotate(0.01turn);
+image-rendering: pixelated;
+z-index: 4;
  }
 
  .port1 {
@@ -114,15 +125,125 @@
     bottom: -600px;
  }
 
+}
+
+
+@media (max-width: 500px){
+.contact {
+    background-color: black;
+    border-radius: 20px;
+    position: absolute;
+    top: 300px;
+    left: 20px;
+
+    transform: rotate(0.01turn);
+    
+}
+
+.artwork {
+   background-color: black;
+    border-radius: 20px;
+    position: absolute;
+    top: 500px;
+    left: 30px;
+    transform: rotate(-0.01turn)
+}
+
+.instagram {
+    position: absolute;
+    scale: 20%;
+    top: 900px;
+    left: 100px;
+    z-index: 2;
+}
+.blender {
+    background-color: black;
+     border-radius: 20px;
+     position: absolute;
+     top: 950px;
+     left: -10px;
+     transform: rotate(-0.06turn) 
+     scale(90%)
+ }
+ .info {
+    background-color: black;
+     border-radius: 20px;
+     position: absolute;
+     top: 680px;
+     left: 40px;
+     transform: rotate(-0.04turn);
+ }
+
  .title 
  {
 position: absolute;
-top: 300px;
-left: 900px;
-transform: scale(190%) rotate(0.01turn);
+top: 50px;
+left: -50px;
+transform: scale(85%) rotate(0.01turn);
 image-rendering: pixelated;
 z-index: 4;
  }
+
+ .port1 {
+    position: absolute;
+    left: 0px;
+    bottom: -800px;
+ }
+
+ 
+ .port2 {
+    position: absolute;
+    left: 0px;
+   top: 100px;
+   transform: scale(150%) rotate(0.01turn);
+   image-rendering: pixelated;
+ }
+
+ 
+ .port3 {
+    position: absolute;
+    left: 228px;
+     top: 1040px;
+     z-index: index 1; ;
+ }
+
+ 
+ .port4 {
+    position: absolute;
+    left: -20px;
+    bottom: -1400px;
+    scale: 70%;
+ }
+
+ 
+ .port5 {
+    position: absolute;
+    left:   -250px;
+    bottom: -2000px;
+    scale: 50%;
+ }
+
+ .port6 {
+    position: absolute;
+    left: 0px;
+    bottom: -2200px;
+    z-index: 1;
+ }
+
+ .port7 {
+    position: absolute;
+    left: -50px;
+    bottom: -2800px;
+    scale: 80%;
+ }
+
+ .port8 {
+    position: absolute;
+    left: 0px;
+    bottom: -3200px;
+ }
+
+}
     </style>
     
 <script 
@@ -135,11 +256,10 @@ src="https://ajax.googleapis.com/ajax/libs/threejs/r84/three.min.js">
     <div class="links">
         
             <div class="contact">
-                <a href="contact.html"> <img src="graphics/contact.gif"></a>
+                <a href="contact.html"> <img src="graphics/Contact.gif"></a>
             </div>
-        
             <div class="artwork">
-                <a href="artwork.html"><img src="graphics/Artwork.gif"></a> 
+                <a href="artwork.html"><img src="graphics/artwork.gif"></a> 
             </div>
 
             <div class="instagram">

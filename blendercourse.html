@@ -19,6 +19,7 @@ body {
     cursor: res;
 }
 
+@media (min-width: 500px){
 .par {
     display: flex;
     flex-wrap: wrap;
@@ -36,6 +37,8 @@ body {
     font
 }
 
+
+
 .blendl {
     position: absolute;
     left:10%;
@@ -48,7 +51,47 @@ body {
 .back { 
     position: absolute;
 }
+}
 
+@media (max-width: 500px){
+.par {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-size: 30px;
+    font-family: ' One', sans-serif;
+    color: rgb(231, 114, 36);
+    font-family: "Concert One", sans-serif;
+    position: relative;
+    border-radius: 50px;
+    background-color: black;
+    transform: scale(80%);
+    text-align: center;
+    top: 300px;
+    font
+}
+
+.blurb {
+    position: absolute;
+    scale: 70%; 
+    left: -300px;
+    top: 1300px;
+}
+
+.blendl {
+    position: absolute;
+    left: -200px;
+    top:-180px;
+    transform: scale(30%)
+}
+
+
+
+.back { 
+    position: absolute;
+}
+
+}
     </style>
   
 </head>
@@ -69,7 +112,7 @@ body {
     </div>
     
     <div>
-        <div class="3d blurbs"> <img src="graphics/trog.gif" ></div>
+        <div class="blurb"> <img src="graphics/trog.gif" ></div>
     </div>
 </body>
 </html>

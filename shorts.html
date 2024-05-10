@@ -18,6 +18,8 @@
         margin: 0;
         padding: 0px; }
 
+
+        @media (min-width: 500px){
         .shorts{
             position: relative;
             display: grid;
@@ -37,6 +39,33 @@
             position: relative;
             top: 200px;
         }
+    }
+
+        @media (max-width: 500px){
+        .shorts{
+            position: absolute;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            scale: 30%;
+            
+
+        }
+
+        .vid1{
+            position: absolute;
+            top: 200px;
+            left: 220px;
+            background-color: black;
+        }
+
+        .vid2{
+            position: absolute;
+            top: 1000px;
+            left: 220px;
+
+        }
+    }
     </style>
 </head>
 <body>
